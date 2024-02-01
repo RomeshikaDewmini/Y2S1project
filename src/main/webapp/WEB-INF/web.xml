@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>OOPInventoryManagementWebApp</display-name>
+	<servlet>
+		<servlet-name>AddInventoryServlet</servlet-name>
+		<servlet-class>com.oop.servlet.AddInventoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateInventoryServlet</servlet-name>
+		<servlet-class>com.oop.servlet.UpdateInventoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetInventoryServlet</servlet-name>
+		<servlet-class>com.oop.servlet.GetInventoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteInventoryServlet</servlet-name>
+		<servlet-class>com.oop.servlet.DeleteInventoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ListInventoryServlet</servlet-name>
+		<servlet-class>com.oop.servlet.ListInventoryServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>AddInventoryServlet</servlet-name>
+		<url-pattern>/AddInventoryServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetInventoryServlet</servlet-name>
+		<url-pattern>/GetInventoryServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateInventoryServlet</servlet-name>
+		<url-pattern>/UpdateInventoryServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteInventoryServlet</servlet-name>
+		<url-pattern>/DeleteInventoryServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListInventoryServlet</servlet-name>
+		<url-pattern>/ListInventoryServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>homeView.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+</web-app>
