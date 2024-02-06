@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class Inventory {
 
-	private String partId;
+	private string partId;
 
 	private String partName;
 
